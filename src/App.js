@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import HomeAbout from "./components/HomeAbout";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="portfolio" element={<Portfolio />}></Route>
           <Route path="contact" element={<Contact />}></Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </React.Fragment>
   );

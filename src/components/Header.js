@@ -2,7 +2,7 @@ import React, { useState , useEffect} from "react";
 import logo from "../assets/logo.png";
 
 
-import {  Link } from "react-router-dom";
+import {  NavLink , Link } from "react-router-dom";
 
 function Header() {
   const [MenuVisible, setMenuVisible] = useState(true);
@@ -50,17 +50,17 @@ function Header() {
         <div className="w-full  md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li className="py-4 md:py-0 lg:py-0">
-               <Link to="/" className='text-zinc-950'  onClick={hideMenu}>Home</Link>
+               <NavLink to="/" className='text-zinc-950'  onClick={hideMenu}>Home</NavLink>
             </li>
             <li  className="py-4 md:py-0 lg:py-0">
-               <Link to="/about" onClick={hideMenu}>About</Link>
+               <NavLink to="/about" onClick={hideMenu}>About</NavLink>
             </li>
             
             <li  className="py-4 md:py-0 lg:py-0">
-               <Link to="/portfolio"  onClick={hideMenu}>Portfolio</Link>
+               <NavLink to="/portfolio"  onClick={hideMenu}>Portfolio</NavLink>
             </li>
             <li  className="py-4 md:py-0 lg:py-0">
-               <Link to="/contact"  onClick={hideMenu}>Contact</Link>
+               <NavLink to="/contact"  onClick={hideMenu}>Contact</NavLink>
             </li>
           </ul>
         </div>
