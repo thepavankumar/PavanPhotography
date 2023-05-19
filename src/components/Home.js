@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from "./Hero";
+import HomeAbout from "./HomeAbout";
 
 function MainHero() {
   return (
-    <div></div>
+    <div>
+      <Hero/>
+      <HomeAbout/>
+    </div>
   )
 }
 
