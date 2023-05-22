@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import HomeAbout from "./components/HomeAbout";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+import CopyrightFooter from "./components/CopyrightFooter";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="contact" element={<Contact />}></Route>
         </Routes>
         <Footer/>
+        <CopyrightFooter/>
       </BrowserRouter>
     </React.Fragment>
   );
