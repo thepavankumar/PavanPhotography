@@ -18,14 +18,12 @@ import image14 from "../assets/gallery/image14.jpg";
 function Portfolio() {
   return (
     <div className="container mx-auto px-4">
+       <div className="w-full text-center my-15 py-5 px-5 md:my-100  md:py-25 md:px-25">
+        <p className="mt-4 mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 text-xl md:text-xl"> 
+        Capturing moments, revealing emotions, and painting stories with light is my passion as a photographer. With a keen eye for detail and a deep appreciation for aesthetics, I strive to create stunning visual narratives that leave a lasting impression.
+        </p>
+      </div>
       <div className="gallery">
-        <div className="mb-4">
-          <img
-            src={image1}
-            alt="Image 1"
-            className="w-full h-auto portfolio-img"
-          />
-        </div>
         <div className="mb-4">
           <img
             src={image2}
@@ -56,13 +54,7 @@ function Portfolio() {
           />
         </div>
 
-        <div className="mb-4">
-          <img
-            src={image6}
-            alt="Image 6"
-            className="w-full h-auto portfolio-img"
-          />
-        </div>
+        
 
         <div className="mb-4">
           <img
@@ -127,7 +119,24 @@ function Portfolio() {
             className="w-full h-auto portfolio-img"
           />
         </div>
-      </div>
+
+        <div className="mb-4">
+          <img
+            src={image1}
+            alt="Image 6"
+            className="w-full h-auto portfolio-img"
+          />
+        </div>
+
+        <div className="mb-4">
+          <img
+            src={image6}
+            alt="Image 6"
+            className="w-full h-auto portfolio-img"
+          />
+        </div>
+     
+    </div>
     </div>
   );
 }
