@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import image1 from "../assets/gallery/image1.jpg";
 import image2 from "../assets/gallery/image2.jpg";
 import image3 from "../assets/gallery/image3.jpg";
@@ -23,6 +24,8 @@ function Portfolio() {
         Capturing moments, revealing emotions, and painting stories with light is my passion as a photographer. With a keen eye for detail and a deep appreciation for aesthetics, I strive to create stunning visual narratives that leave a lasting impression.
         </p>
       </div>
+      {/* gallery here  */}
+       
       <div className="gallery">
         <div className="mb-4">
           <img
