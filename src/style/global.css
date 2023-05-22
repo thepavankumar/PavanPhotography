@@ -38,3 +38,16 @@ body {
 .active {
   font-weight: bold;
 }
+
+.portfolio-img{
+  width:300px;
+  height: 300px;
+}
+
+@media (min-width: 640px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
